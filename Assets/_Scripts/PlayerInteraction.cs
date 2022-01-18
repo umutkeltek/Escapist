@@ -1,79 +1,86 @@
-/*using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine;
 
-public class PlayerInteraction: MonoBehaviour {
-
-    public float interactionDistance;
+public class PlayerInteraction: MonoBehaviour 
+{
 
     public TMPro.TextMeshProUGUI interactionText;
     public GameObject interactionHoldGO; // the ui parent to disable when not interacting
     public UnityEngine.UI.Image interactionHoldProgress; // the progress bar for hold interaction type
-
     Camera cam;
+    private Vector2 _boxSize = new Vector2(0.3f, 0.3f);
 
-    void Start() {
-        cam = Camera.main;
+    private void Update()
+    {
+        
+            CheckInteraction();
+        
     }
 
-    // Update is called once per frame
-    void Update() {
-        Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
-        RaycastHit hit;
+    public void CheckInteraction()
+    {
+        RaycastHit2D[] hits = Physics2D.BoxCastAll(transform.position, _boxSize,0,Vector2.zero);
+        if (hits.Length > 0)
+        {   
+            foreach (RaycastHit2D rc in hits)
+            {
+                Interactable interactable = rc.transform.GetComponent<Interactable>();
 
-        bool successfulHit = false;
-
-        if (Physics.Raycast(ray, out hit, interactionDistance)) {
-            Interactable interactable = hit.collider.GetComponent < Interactable > ();
-
-            if (interactable != null) {
-                HandleInteraction(interactable);
-                interactionText.text = interactable.GetDescription();
-                successfulHit = true;
-
-                interactionHoldGO.SetActive(interactable.interactionType == Interactable.InteractionType.Hold);
+                if (interactable != null)
+                {
+                    HandleInteraction(interactable);
+                    interactionText.text = interactable.GetDescription();
+                }
+                
+                else
+                {
+                    interactionText.text = "";
+                }
+                /*if (rc.transform.GetComponent<Interactable>())
+                {   
+                    rc.transform.GetComponent<Interactable>().Interact();
+                    return;
+                }*/
             }
         }
-
-        // if we miss, hide the UI
-        if (!successfulHit) {
-            interactionText.text = "";
-            interactionHoldGO.SetActive(false);
-        }
+        
     }
 
-    void HandleInteraction(Interactable interactable) {
+    void HandleInteraction(Interactable interactable)
+    {
         KeyCode key = KeyCode.E;
-        switch (interactable.interactionType) {
-            case Interactable.InteractionType.Click:
-                // interaction type is click and we clicked the button -> interact
-                if (Input.GetKeyDown(key)) {
+        switch (interactable.interactionType)
+        {
+            case Interactable.InteractionType.Use:
+                if (Input.GetKeyDown(key))
+                {
                     interactable.Interact();
                 }
                 break;
-            case Interactable.InteractionType.Hold:
-                if (Input.GetKey(key)) {
-                    // we are holding the key, increase the timer until we reach 1f
-                    interactable.IncreaseHoldTime();
-                    if (interactable.GetHoldTime() > 1f) {
-                        interactable.Interact();
-                        interactable.ResetHoldTime();
-                    }
-                } else {
-                    interactable.ResetHoldTime();
+            case Interactable.InteractionType.Open:
+                if (Input.GetKeyDown(key))
+                {
+                    interactable.Interact();
                 }
-                interactionHoldProgress.fillAmount = interactable.GetHoldTime();
                 break;
-                // here is started code for your custom interaction :)
-            case Interactable.InteractionType.Minigame:
-                // here you make ur minigame appear
+            case Interactable.InteractionType.Talk:
+                if (Input.GetKeyDown(key))
+                {
+                    interactable.Interact();
+                }
                 break;
-
-                // helpful error for us in the future
+            case Interactable.InteractionType.Pickup:
+                if (Input.GetKeyDown(key))
+                {
+                    interactable.Interact();
+                }
+                break;
             default:
-                throw new System.Exception("Unsupported type of interactable.");
+                throw new SystemException("Unsupported type of interactable.");
         }
     }
-}*/
+}

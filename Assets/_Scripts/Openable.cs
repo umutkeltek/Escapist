@@ -9,6 +9,8 @@ public class Openable : Interactable
     public Sprite closed;
     private SpriteRenderer sr;
     private bool isOpen;
+    private Interactable _interactableImplementation;
+
     public override void Interact()
     {
         if (isOpen)
@@ -17,6 +19,11 @@ public class Openable : Interactable
             sr.sprite = open;
         
         isOpen = !isOpen;
+    }
+
+    public override string GetDescription()
+    {
+        return "E to Interact";
     }
 
     private void Start()

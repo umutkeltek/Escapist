@@ -6,30 +6,42 @@ using UnityEngine;
 using TMPro;
 using Random = UnityEngine.Random;
 
+
 [RequireComponent(typeof(AudioSource))]
 public class TypeWriter : MonoBehaviour
 {
     public AudioClip TypeSound;
     AudioSource audSrc;
+    
     [Multiline]
     public string paragraph;
     TMP_Text thisText;
     public float delay;
+    [SerializeField] GameObject nextSceneButton;
+
+    private void Awake()
+    {
+        nextSceneButton.GetComponent<NextScene>();
+    }
+
     private void Start()
     {
+        
         audSrc = GetComponent<AudioSource>();
         thisText = GetComponent<TMP_Text>();
 
-        StartCoroutine(TypeWrite());
+        InvokeMyCoroutine();
     }
-
-    IEnumerator TypeWrite()
+    
+    public IEnumerator TypeWrite()
     {
+        
         foreach (char i in paragraph)
-        {   if (i.ToString() == " ")
+        {   
+            if (i.ToString() == " ")
             {
                 thisText.text += i.ToString();
-                yield return new WaitForSeconds(0.21f);
+                yield return new WaitForSeconds(0f);
             }
             else
             {
@@ -40,10 +52,19 @@ public class TypeWriter : MonoBehaviour
                 {
                     yield return new WaitForSeconds(1);
                 }
-                else { }
-                yield return new WaitForSeconds(delay);
+                else
+                {
+                    yield return new WaitForSeconds(delay);
+                }
             }
         }
-            
+
+        nextSceneButton.GetComponent<NextScene>().OpenButton();
+
     } 
+    void InvokeMyCoroutine()
+    {
+        StartCoroutine(TypeWrite());
+    }
+    
 }

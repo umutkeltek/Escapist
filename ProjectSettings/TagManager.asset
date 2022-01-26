@@ -6,11 +6,16 @@ TagManager:
   tags:
   - Player1
   - NextSceneButton
+  - Dialogue
+  - WC
+  - Window
+  - Bed
+  - Door
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Dialogue
   - Water
   - UI
   - 

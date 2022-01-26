@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _targetPosition;
     private bool _isMoving = false;
 
-    void Update()
+    void FixedUpdate()
     {   
         if (Input.GetMouseButton(0))
         {

@@ -1682,7 +1682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &404729834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16833,7 +16833,55 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 437148332}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: SentenceAndColor.color.b
+      value: 0.9481132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: SentenceAndColor.color.g
+      value: 0.9481132
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: SentenceAndColor.color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: SentenceAndColor.color.rgba
+      value: 4278716649
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCLeftClickSentences1.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences1.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedLeftClickSentences1.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences1.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences1.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences1.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
@@ -16853,8 +16901,240 @@ PrefabInstance:
         says!'
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences1.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsLeftClickSentences1.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: windowsLeftClickSentences.Array.data[0]
       value: "I can only see the sky from here. It should\r be past midnight."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCLeftClickSentences.Array.data[0].Sentence
+      value: 'The Pothole. It''s clogged. Obviously... I don''t think
+
+        a
+        grown man would fit inside...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCLeftClickSentences1.Array.data[0].Sentence
+      value: 'The Pothole. It''s clogged. Obviously... I don''t think
+
+        a
+        grown man would fit inside...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences.Array.data[0].Sentence
+      value: I won't touch it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences.Array.data[1].Sentence
+      value: Yikes! No way !!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedLeftClickSentences.Array.data[0].Sentence
+      value: 'It''s my bed. Although I don''t think it''s proper to call
+
+        it
+        "mine" since I don''t think it''s ever been cleaned and shows the stains
+
+        and
+        markings of HUNDREDS of prisoners...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCLeftClickSentences.Array.data[0].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences1.Array.data[0].Sentence
+      value: 'I won''t touch it '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences1.Array.data[1].Sentence
+      value: Yikes! No way !!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedLeftClickSentences1.Array.data[0].Sentence
+      value: 'It''s my bed. Although I don''t think it''s proper to call
+
+        it
+        "mine" since I don''t think it''s ever been cleaned and shows the stains
+
+        and
+        markings of HUNDREDS of prisoners...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences.Array.data[0].Sentence
+      value: I pulled the sheet apart from the mattress
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences.Array.data[1].Sentence
+      value: I picked up the sheet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences.Array.data[2].Sentence
+      value: 'There doesn''t seem to be anything else noteworthy
+
+        here..'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences.Array.data[0].Sentence
+      value: It seems locked
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences.Array.data[0].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WCRightClickSentences.Array.data[1].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedLeftClickSentences.Array.data[0].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences1.Array.data[0].Sentence
+      value: ' I pulled the sheet apart from the mattress'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences1.Array.data[1].Sentence
+      value: ' I picked up the sheet'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences1.Array.data[2].Sentence
+      value: There doesn't seem to be anything else noteworthy here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences1.Array.data[0].Sentence
+      value: It seems locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences1.Array.data[1].Sentence
+      value: It seems locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[0].Sentence
+      value: Hey! Stop tampering with the door!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[1].Sentence
+      value: ' I told you to stop that!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[2].Sentence
+      value: 'This is your final warning! If you touch the door again,
+
+        I''ll
+        come down there and execute you myself! And I don''t care what the
+
+        warden
+        says!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[3].Sentence
+      value: "I shouldn't do this anymore if I want to survive until \r\ndaybreak..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences.Array.data[0].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences.Array.data[1].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: bedRightClickSentences.Array.data[2].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences.Array.data[0].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences1.Array.data[0].Sentence
+      value: Hey! Stop tampering with the door!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences1.Array.data[1].Sentence
+      value: I told you to stop that!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences1.Array.data[2].Sentence
+      value: 'This is your final warning! If you touch the door again,
+
+        I''ll
+        come down there and execute you myself! And I don''t care what the warden
+        says!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[0].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[1].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[2].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorRightClickSentences.Array.data[3].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences.Array.data[0].Sentence
+      value: 'The bars seem to be pretty well built. I don''t think there''s
+
+        a
+        way to cut them open.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences.Array.data[1].Sentence
+      value: 'I don''t think I should waste any more time with the
+
+        window
+        bars. Not until I get something to work with anyways...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsLeftClickSentences.Array.data[0].Sentence
+      value: 'I can only see the sky from here. It should
+
+        be past midnight'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences1.Array.data[0].Sentence
+      value: 'The bars seem to be pretty well built. I don''t think there''s
+
+        a
+        way to cut them open.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences1.Array.data[1].Sentence
+      value: 'I don''t think I should waste any more time with the
+
+        window
+        bars. Not until I get something to work with anyways...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsLeftClickSentences1.Array.data[0].Sentence
+      value: "I can only see the sky from here. It should\r be past midnight."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences.Array.data[0].color.rgba
+      value: 35591
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences.Array.data[1].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsLeftClickSentences.Array.data[0].color.rgba
+      value: 4278225671
       objectReference: {fileID: 0}
     - target: {fileID: 8452667342519310466, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: m_RootOrder

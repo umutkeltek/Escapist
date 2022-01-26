@@ -3,55 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+[System.Serializable]
 
 public class PlayerDialogue : MonoBehaviour
-{   
+{
     
-    [TextArea(3,10)]
-    [SerializeField] private string[] doorLeftClickSentences;
-    [TextArea(3,10)]
-    [SerializeField] private string[] doorRightClickSentences;
-    [TextArea(3,10)]
-    [SerializeField] private string[] windowsLeftClickSentences;
-    [TextArea(3,10)]
-    [SerializeField] private string[] windowRightClickSentences;
-    [TextArea(3,10)]
-    [SerializeField] private string[] WCLeftClickSentences;
-    [TextArea(3,10)]
+    [SerializeField] protected SentenceAndColor[] doorLeftClickSentences;
+    [SerializeField] protected SentenceAndColor[] doorRightClickSentences;
     
-    [SerializeField] private string[] WCRightClickSentences;
-    [TextArea(3,10)]
-    [SerializeField] private string[] bedLeftClickSentences;
-    [TextArea(3,10)]
-    [SerializeField] private string[] bedRightClickSentences;
+    [SerializeField] protected SentenceAndColor[] windowsLeftClickSentences;
+    [SerializeField] protected SentenceAndColor[] windowRightClickSentences;
     
-    private int doorLeftClickIndex;
+    [SerializeField] protected SentenceAndColor[] WCLeftClickSentences;
+    [SerializeField] protected SentenceAndColor[] WCRightClickSentences;
     
-    private int doorRightClickIndex;
+    [SerializeField] protected SentenceAndColor[] bedLeftClickSentences;
+    [SerializeField] protected SentenceAndColor[] bedRightClickSentences;
     
     
-    private int windowLeftClickIndex;
-    
-    private int windowRightClickIndex;
-    
-    
-    private int WCLeftClickIndex;
-    
-    private int WCRightClickIndex;
-    
-    
-    private int bedLeftClickIndex;
-    
-    private int bedRightClickIndex;
+    private bool isInsideCollision;
 
     private string objectTag;
-    [SerializeField] public TMPro.TextMeshProUGUI interactionText;
-    private bool isInsideCollision;
     
+    [SerializeField] public TextMeshProUGUI interactionText;
     
-    protected void NextSentence(string[] sentences, ref int index)
-    {
-        interactionText.text = sentences[index];
+    private int doorLeftClickIndex;
+    private int doorRightClickIndex;
+    private int windowLeftClickIndex;
+    private int windowRightClickIndex;
+    private int WCLeftClickIndex;
+    private int WCRightClickIndex;
+    private int bedLeftClickIndex;
+    private int bedRightClickIndex;
+
+        protected void NextSentence(SentenceAndColor[] sentences, ref int index,Color32 color)
+    {   
+        interactionText.text = sentences[index].Sentence;
+        interactionText.color = sentences[index].color;
         if (index < sentences.Length - 1)
         {   
             index++;
@@ -85,6 +73,7 @@ public class PlayerDialogue : MonoBehaviour
     {
         objectTag = "";
         isInsideCollision = false;
+        interactionText.text = "";
     }
 
     protected void leftClickCheck()
@@ -92,16 +81,16 @@ public class PlayerDialogue : MonoBehaviour
         switch (objectTag)
         {
             case "Door":
-                NextSentence(doorLeftClickSentences, ref doorLeftClickIndex);
+                NextSentence(doorLeftClickSentences, ref doorLeftClickIndex, doorLeftClickSentences[doorLeftClickIndex].color);
                 break;
             case "WC":
-                NextSentence(WCLeftClickSentences, ref WCLeftClickIndex);
+                NextSentence(WCLeftClickSentences, ref WCLeftClickIndex, WCLeftClickSentences[doorLeftClickIndex].color);
                 break;
             case "Window":
-                NextSentence(windowsLeftClickSentences, ref windowLeftClickIndex);
+                NextSentence(windowsLeftClickSentences, ref windowLeftClickIndex,windowsLeftClickSentences[doorLeftClickIndex].color);
                 break;
             case "Bed":
-                NextSentence(bedLeftClickSentences, ref bedLeftClickIndex);
+                NextSentence(bedLeftClickSentences, ref bedLeftClickIndex,bedLeftClickSentences[doorLeftClickIndex].color);
                 break;
         }
     }
@@ -111,16 +100,16 @@ public class PlayerDialogue : MonoBehaviour
         switch (objectTag)
         {
             case "Door":
-                NextSentence(doorRightClickSentences, ref doorRightClickIndex);
+                NextSentence(doorRightClickSentences, ref doorRightClickIndex,doorRightClickSentences[doorLeftClickIndex].color);
                 break;
             case "WC":
-                NextSentence(WCRightClickSentences, ref WCRightClickIndex);
+                NextSentence(WCRightClickSentences, ref WCRightClickIndex,WCRightClickSentences[doorLeftClickIndex].color);
                 break;
             case "Window":
-                NextSentence(windowRightClickSentences, ref windowRightClickIndex);
+                NextSentence(windowRightClickSentences, ref windowRightClickIndex,windowRightClickSentences[doorLeftClickIndex].color);
                 break;
             case "Bed":
-                NextSentence(bedRightClickSentences, ref bedRightClickIndex);
+                NextSentence(bedRightClickSentences, ref bedRightClickIndex,bedRightClickSentences[doorLeftClickIndex].color);
                 break;
         }
     }

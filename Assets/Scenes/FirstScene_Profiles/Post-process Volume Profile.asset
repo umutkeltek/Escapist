@@ -21,7 +21,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.764
+    value: 0.501
   size:
     overrideState: 0
     value: 1
@@ -55,7 +55,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.489
+    value: 0.515
   smoothness:
     overrideState: 0
     value: 0.2

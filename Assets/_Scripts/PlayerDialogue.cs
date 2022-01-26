@@ -52,9 +52,14 @@ public class PlayerDialogue : MonoBehaviour
     protected void NextSentence(string[] sentences, ref int index)
     {
         interactionText.text = sentences[index];
-        if (index <= sentences.Length - 1)
+        if (index < sentences.Length - 1)
         {   
             index++;
+        }
+
+        else
+        {
+            index = index;
         }
     }
     void Update()

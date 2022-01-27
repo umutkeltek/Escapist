@@ -16968,11 +16968,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.data[0].Sentence
-      value: I pulled the sheet apart from the mattress
+      value: I pulled the sheet apart from the mattress.
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.data[1].Sentence
-      value: I picked up the sheet
+      value: I picked up the sheet.
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.data[2].Sentence
@@ -16982,7 +16982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorLeftClickSentences.Array.data[0].Sentence
-      value: It seems locked
+      value: It seems locked.
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: WCRightClickSentences.Array.data[0].color.rgba
@@ -17104,7 +17104,7 @@ PrefabInstance:
       propertyPath: windowsLeftClickSentences.Array.data[0].Sentence
       value: 'I can only see the sky from here. It should
 
-        be past midnight'
+        be past midnight.'
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: windowRightClickSentences1.Array.data[0].Sentence

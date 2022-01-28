@@ -16828,6 +16828,22 @@ PrefabInstance:
       propertyPath: interactionText
       value: 
       objectReference: {fileID: 404729835}
+    - target: {fileID: 1310370372, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: m_Size.x
+      value: 0.17533363
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310370372, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: m_Size.y
+      value: 0.29500893
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310370372, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0038736537
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310370372, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0052961856
+      objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: interactionText
       value: 

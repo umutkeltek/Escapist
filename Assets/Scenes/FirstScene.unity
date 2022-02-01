@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 111162116}
   - component: {fileID: 111162115}
   - component: {fileID: 111162118}
+  - component: {fileID: 111162117}
   m_Layer: 0
   m_Name: FloorHole
   m_TagString: WC
@@ -439,6 +440,19 @@ Transform:
   m_Father: {fileID: 1724402556}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &111162117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111162114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c5be663fc86c74ab5d16506796dc61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 2188890f0f7fe3f4ebac1846278bb910, type: 3}
 --- !u!61 &111162118
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1422,9 +1436,10 @@ GameObject:
   m_Component:
   - component: {fileID: 379402428}
   - component: {fileID: 379402427}
+  - component: {fileID: 379402429}
   m_Layer: 0
   m_Name: MiceHole
-  m_TagString: Untagged
+  m_TagString: MouseHole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1488,12 +1503,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379402426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.2068806, y: 1.9845101, z: 6.3297396}
-  m_LocalScale: {x: 0.8631, y: 0.72622633, z: 1}
+  m_LocalPosition: {x: 3.7407694, y: 2.6244829, z: 2.711546}
+  m_LocalScale: {x: 1.2114471, y: 1.1520128, z: 1}
   m_Children: []
-  m_Father: {fileID: 1691162996}
-  m_RootOrder: 69
+  m_Father: {fileID: 1724402556}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &379402429
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379402426}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.024758823, y: -0.22549295}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.36951762, y: 0.77098584}
+  m_EdgeRadius: 0
 --- !u!1001 &393078339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1567,6 +1608,7 @@ GameObject:
   - component: {fileID: 396461004}
   - component: {fileID: 396461005}
   - component: {fileID: 396461007}
+  - component: {fileID: 396461006}
   m_Layer: 0
   m_Name: Basic_Window_Pixel
   m_TagString: Window
@@ -1639,6 +1681,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &396461006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396461003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c5be663fc86c74ab5d16506796dc61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 2188890f0f7fe3f4ebac1846278bb910, type: 3}
 --- !u!61 &396461007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3609,9 +3664,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1011541483}
   - component: {fileID: 1011541482}
+  - component: {fileID: 1011541484}
   m_Layer: 0
   m_Name: slit-export
-  m_TagString: Untagged
+  m_TagString: Crack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3675,12 +3731,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011541481}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.8473797, y: -2.35899, z: 6.3297396}
+  m_LocalPosition: {x: 5.876149, y: -1.7975073, z: 2.711546}
   m_LocalScale: {x: 0.33801094, y: 0.334542, z: 0.3242}
   m_Children: []
-  m_Father: {fileID: 1691162996}
-  m_RootOrder: 68
+  m_Father: {fileID: 1724402556}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1011541484
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011541481}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.5084833, y: -0.07293579}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6569669, y: 1.2234864}
+  m_EdgeRadius: 0
 --- !u!1 &1047050345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3802,6 +3884,7 @@ GameObject:
   - component: {fileID: 1114050355}
   - component: {fileID: 1114050357}
   - component: {fileID: 1114050358}
+  - component: {fileID: 1114050356}
   m_Layer: 0
   m_Name: CellDoor
   m_TagString: Door
@@ -3874,6 +3957,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1114050356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114050353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c5be663fc86c74ab5d16506796dc61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: {fileID: 2800000, guid: 2188890f0f7fe3f4ebac1846278bb910, type: 3}
 --- !u!61 &1114050357
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15387,8 +15483,6 @@ Transform:
   - {fileID: 263975642}
   - {fileID: 1594152986}
   - {fileID: 976282544}
-  - {fileID: 1011541483}
-  - {fileID: 379402428}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15703,6 +15797,8 @@ Transform:
   - {fileID: 1546643876}
   - {fileID: 396461004}
   - {fileID: 111162116}
+  - {fileID: 1011541483}
+  - {fileID: 379402428}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16845,9 +16941,25 @@ PrefabInstance:
       value: 0.0052961856
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: interactedAll
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: interactionText
       value: 
       objectReference: {fileID: 437148332}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2LeftClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: SentenceAndColor.color.b
       value: 0.9481132
@@ -16861,8 +16973,52 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackLeftClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2LeftClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: SentenceAndColor.color.rgba
       value: 4278716649
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2RightClick.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleLeftClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleRightClick.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aLeftClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bLeftClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.size
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: WCLeftClickSentences1.Array.size
@@ -16882,7 +17038,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.size
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences1.Array.size
@@ -16897,8 +17057,63 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2LeftClick.Array.data[0].Sentence
+      value: 'The Pothole. It''s clogged. Obviously... I don''t think
+
+        a
+        grown man would fit inside...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorRightClickSentences1.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[0].Sentence
+      value: 'Reluctantly, you place your hand just by the clogged, flooding hole
+        on the ground. The already unbrearable stench is burning through your nostrils
+        as you approach your face closer to take a look inside.Your stomach is clenching,
+        sharply.
+
+        Resistance is futile, you vomit...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[1].Sentence
+      value: Gathering your strenght and courage, you place your hand deep into the
+        oozing soft tissue consisting of human feces, vomit and god know what else.
+        Ripping thrrough the soft and mushy sufrace, your hand dives deeper.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[2].Sentence
+      value: 'You feel the filth filling underneath your fingernails, invading between
+        your fingers and climbing its way towards your elbow. Diving deeper, you
+        try to feel the inner walls of the toilet hole. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[3].Sentence
+      value: After what feels like a decade, your hand touches a texture, slightly
+        different than what you've been experiencing so far. It feels like a piece
+        of fabric, safely pinned to the inner wall with a thin yet sturdy thread.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[4].Sentence
+      value: As you pull your hand out, a (now) familiar urge to vomit revisits your
+        mind. This time with a sensation to faint alongside. You pull yourself together
+        and this time resist the urge...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[5].Sentence
+      value: Coming out, clenched between your filth dropping, fist forming hand,
+        there's a small cloth satchel.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[6].Sentence
+      value: You fiddle with the contents and pull out a single flask, roughly the
+        size of your index finger. Filled with some kind of a liquid you see for
+        the first time in your life...
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.data[2]
@@ -16907,6 +17122,19 @@ PrefabInstance:
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorLeftClickSentences.Array.data[0]
       value: It seems locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2LeftClick.Array.data[0].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackLeftClick.Array.data[0].Sentence
+      value: There seems to be a tiny crack. There's a muffled snoring voice coming
+        from behind the wall.
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorRightClickSentences.Array.data[2]
@@ -16925,8 +17153,182 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[0].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[1].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[2].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[3].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[4].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[5].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: WC2RightClick.Array.data[6].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2LeftClick.Array.data[0].Sentence
+      value: There seems to be a tiny crack. There's a muffled snoring voice coming
+        from behind the wall.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[0].Sentence
+      value: You place your hand above the crack. A slight breeze is flowing out.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[1].Sentence
+      value: I should tap and see if there's anyone else in there...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[2].Sentence
+      value: You tap slightly.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[3].Sentence
+      value: Who is there ? Oh ? Finally, there's someone.... Hey! Talk to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[4].Sentence
+      value: 'Thank god you are there. Listen here... I used to stay in your cell...
+        I just had a deal with the lead magicka and got a flask of,..... Well just
+        a flask from him. But the bastard got scared and turned me in. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[5].Sentence
+      value: They pulled me out of my cell and gave me a good beating but not before
+        I managed to sneak the flask into the toilet hole...They searched that cell
+        brick by brick but no-one dares touch that shithole. You have to get it out
+        for me... Just pull the flask out and let me know.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[6].Sentence
+      value: Hey! Did you get it already ???
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[7].Sentence
+      value: Just don't talk to me until you get the flask. The guard will hear us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[8].Sentence
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2RightClick.Array.data[0].Sentence
+      value: You tap slightly.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2RightClick.Array.data[1].Sentence
+      value: You got it? Excellent! Now listen up... There's no way for you to squeeze
+        the flask through the crack. So you have to use it on the guard yourself.
+        As i said, it's a puppeteer spell. You have to open the tip of the flask
+        and spray it on the guard's face.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2RightClick.Array.data[2].Sentence
+      value: It'll take a second before the guard to become your puppet. He's the
+        only one in charge for the night. We should be fine once we turn him
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackLeftClick.Array.data[0].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: windowsLeftClickSentences.Array.data[0]
       value: "I can only see the sky from here. It should\r be past midnight."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2LeftClick.Array.data[0].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[0].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[1].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[2].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[3].color.rgba
+      value: 4288630528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[4].color.rgba
+      value: 4288630528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[5].color.rgba
+      value: 4288630528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[6].color.rgba
+      value: 4288630528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[7].color.rgba
+      value: 4288630528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crackRightClick.Array.data[8].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleLeftClick.Array.data[0].Sentence
+      value: A mouse hole in the wall.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2RightClick.Array.data[0].color.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2RightClick.Array.data[1].color.rgba
+      value: 4288630528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: crack2RightClick.Array.data[2].color.rgba
+      value: 4288630528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleRightClick.Array.data[0].Sentence
+      value: I wonder if it leads anywhere. Or just a den...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleRightClick.Array.data[1].Sentence
+      value: You poke inside
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleRightClick.Array.data[2].Sentence
+      value: Nothing... I think these walls are not too tough to carve through.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aLeftClick.Array.data[0].Sentence
+      value: It seems locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bLeftClick.Array.data[0].Sentence
+      value: It seems locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleLeftClick.Array.data[0].color.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: WCLeftClickSentences.Array.data[0].Sentence
@@ -16934,6 +17336,116 @@ PrefabInstance:
 
         a
         grown man would fit inside...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[0].Sentence
+      value: Hey! Guard!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[1].Sentence
+      value: Guard !
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[2].Sentence
+      value: You hear thumping noises approaching from a distance. Then you feel
+        the foul stench of sweat probably from a great distance as the thumping gets
+        closer and louder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[3].Sentence
+      value: A rugged and deep voice commands from the other side.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[4].Sentence
+      value: What do you want?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[5].Sentence
+      value: It feels like there may be a way to negotiate with this man. Maybe if
+        you could let him know about the flask they've been looking for, you'd be
+        given somewhat a chance to break out. Maybe the guard enters the cell to
+        pick up the flask and forgets to lock it back after leaving... Maybe...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[6].Sentence
+      value: Do you want to tell the guard about the flask?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[7].Sentence
+      value: You tell the guard about your little conversation with the neighboring
+        cell and show him the flask through the tiny hole on the cell door where
+        they push the cupcontaining your breakfast (which is the only meal of the
+        day) every morning.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[8].Sentence
+      value: Guard seems amused, even somewhat ecstatic. He yells behind to some
+        other guy and asks him to come over. Another thumping approaches, this time
+        swiftly...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[9].Sentence
+      value: In a few seconds, the cell door to your right opens with a long creaking
+        sound.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[0].Sentence
+      value: Hey! Guard!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[1].Sentence
+      value: Guard !
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[2].Sentence
+      value: You hear thumping noises approaching from a distance. Then you feel
+        the foul stench of sweat probably from a great distance as the thumping gets
+        closer and louder.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[3].Sentence
+      value: A rugged and deep voice commands from the other side
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[4].Sentence
+      value: 'What do you want? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[5].Sentence
+      value: You have to get this guy to open up the door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[6].Sentence
+      value: '"I don''t think there''s a way for you to open up this door and face
+        me man to man. You are nothing but a lapdog to the warden and I don''t think
+        there''s anything more to you than that..." You yell, in an undermining tone.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[7].Sentence
+      value: I believe you've got the flask. That's why you are pulling this cliche
+        of a trick to convince me to come inside. My friend you are in for a treat!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[8].Sentence
+      value: Guard sounds amused, even somewhat ecstatic. He yells behind to some
+        other guy and asks him to come over. Another thumping approaches, this time
+        swiftly...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[9].Sentence
+      value: Two guards are now at your door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleRightClick.Array.data[0].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleRightClick.Array.data[1].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: miceHoleRightClick.Array.data[2].color.rgba
+      value: 4278225671
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: WCLeftClickSentences1.Array.data[0].Sentence
@@ -16959,6 +17471,95 @@ PrefabInstance:
 
         and
         markings of HUNDREDS of prisoners...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aLeftClick.Array.data[0].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[10].Sentence
+      value: No one speaks, you just hear one of the guards saying; "We found it!
+        You Cockroach!" He gets no response. Apparently, his addressee is acceptive
+        of the outcome. You hear voices of struggle. It does not take too long. Silence...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[11].Sentence
+      value: Two guards are now at your door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[12].Sentence
+      value: Guard 1 - He knows about it.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[13].Sentence
+      value: Guard 2 - He did not see anything, yet you may be right. He told us
+        about the flask after all. And he seems smart enough to figure out what had
+        just happened.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[14].Sentence
+      value: Guard 1 - Wouldn't it be peculiar for the head magister to find out
+        that both prisoners have killed themselves on the same night?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[15].Sentence
+      value: The door of your cell opens. Revealing two guards. Both of them are
+        armed and easily twice your size...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[16].Sentence
+      value: Guard 2 (Scanning the environment) - Meh, he's too old and too swamped
+        with scrolls to care about maggots or cockroaches anyway. Hey, this guy already
+        pulled out his bedsheet. How convenient...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[17].Sentence
+      value: 'One of the guards grab a hold of you while the other one rolls the
+        sheet firmly and forms a rope '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[18].Sentence
+      value: They tie one end of the rope around your neck, fixing the other end
+        to the bars of the cell window.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[19].Sentence
+      value: END
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bLeftClick.Array.data[0].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[10].Sentence
+      value: The door of your cell opens. Revealing two guards. Both of them are
+        armed and easily twice your size... Both of them are wearing shiny masks,
+        covering their faces, including their eyes.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[11].Sentence
+      value: With a sudden attempt you push the seal of the flask out and spray it
+        to the first guard's face. It has absoultely no effect. Apparently these
+        masks provide a great deal of protection against these attempts.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[12].Sentence
+      value: Guard 2 (Scanning the environment) -  Hey, this guy already pulled out
+        his bedsheet. How convenient...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[13].Sentence
+      value: One of the guards grab a hold of you while the other one rolls the sheet
+        firmly and forms a rope
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[14].Sentence
+      value: They tie one end of the rope around your neck, fixing the other end
+        to the bars of the cell window
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[15].Sentence
+      value: END
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: WCLeftClickSentences.Array.data[0].color.rgba
@@ -16988,7 +17589,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.data[1].Sentence
-      value: I picked up the sheet.
+      value: 'There doesn''t seem to be anything else noteworthy
+
+        here..'
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences.Array.data[2].Sentence
@@ -16997,8 +17600,92 @@ PrefabInstance:
         here..'
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[0].color.rgba
+      value: 4284088421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[1].color.rgba
+      value: 4284088421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[2].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[3].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[4].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[5].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[6].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[7].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[8].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[9].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[0].color.rgba
+      value: 4284088421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[1].color.rgba
+      value: 4284088421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[2].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[3].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[4].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[5].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[6].color.rgba
+      value: 4284088421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[7].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[8].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[9].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorLeftClickSentences.Array.data[0].Sentence
       value: It seems locked.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences.Array.data[1].Sentence
+      value: It is definitely locked.
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: WCRightClickSentences.Array.data[0].color.rgba
@@ -17023,6 +17710,70 @@ PrefabInstance:
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: bedRightClickSentences1.Array.data[2].Sentence
       value: There doesn't seem to be anything else noteworthy here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[10].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[11].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[12].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[13].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[14].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[15].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[16].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[17].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[18].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2aRightClick.Array.data[19].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[10].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[11].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[12].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[13].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[14].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: cellDoor2bRightClick.Array.data[15].color.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorLeftClickSentences1.Array.data[0].Sentence
@@ -17071,6 +17822,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: doorLeftClickSentences.Array.data[1].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorRightClickSentences1.Array.data[0].Sentence
       value: Hey! Stop tampering with the door!
       objectReference: {fileID: 0}
@@ -17085,6 +17840,30 @@ PrefabInstance:
         I''ll
         come down there and execute you myself! And I don''t care what the warden
         says!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[0].Sentence
+      value: Should i take the easy way out?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[1].Sentence
+      value: Should i?
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[2].Sentence
+      value: 'You roll the sheet firmly and form a rope '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[3].Sentence
+      value: You tie the rope around your neck
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[4].Sentence
+      value: .....
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[5].Sentence
+      value: End...
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: doorRightClickSentences.Array.data[0].color.rgba
@@ -17117,6 +17896,13 @@ PrefabInstance:
         bars. Not until I get something to work with anyways...'
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences.Array.data[2].Sentence
+      value: 'I don''t think I should waste any more time with the
+
+        window
+        bars. Not until I get something to work with anyways...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: windowsLeftClickSentences.Array.data[0].Sentence
       value: 'I can only see the sky from here. It should
 
@@ -17141,11 +17927,39 @@ PrefabInstance:
       value: "I can only see the sky from here. It should\r be past midnight."
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[0].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[1].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[2].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[3].color.rgba
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[4].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowsSuicideRightClick.Array.data[5].color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: windowRightClickSentences.Array.data[0].color.rgba
-      value: 35591
+      value: 4278225671
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
       propertyPath: windowRightClickSentences.Array.data[1].color.rgba
+      value: 4278225671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}
+      propertyPath: windowRightClickSentences.Array.data[2].color.rgba
       value: 4278225671
       objectReference: {fileID: 0}
     - target: {fileID: 8452667341613970118, guid: 0f6ceb68f8227234d984bba082809192, type: 3}

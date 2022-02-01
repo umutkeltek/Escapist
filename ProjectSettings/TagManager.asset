@@ -11,6 +11,8 @@ TagManager:
   - Window
   - Bed
   - Door
+  - MouseHole
+  - Crack
   layers:
   - Default
   - TransparentFX

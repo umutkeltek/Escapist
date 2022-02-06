@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEditor.PackageManager.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 [System.Serializable]
 
@@ -110,6 +111,7 @@ public class PlayerDialogue : MonoBehaviour
         {
             WallCrack2Trigger();
         }
+
         
     }
     void Update()
@@ -123,7 +125,7 @@ public class PlayerDialogue : MonoBehaviour
         {
             rightClickCheck();
         }
-        
+        checkRestart();
     }
     
 
@@ -412,7 +414,13 @@ public class PlayerDialogue : MonoBehaviour
             crack2Done = true;
         }
     }
-    
-    
+
+    protected void checkRestart()
+    {
+        if (interactionText.text=="Restart")
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
     
 }
